@@ -15,8 +15,7 @@ $manager = mysqli_fetch_all($manager);
 	<title>Cinema</title>
 </head>
 <body>
-	<!-- <a  href="cashier.php"> <img class="klochko" width="40px" height="50px" src="img/04.svg" alt="Apple"> </a>
-	<a  href="z2.html"> <img class="klochko1" width="40px" height="50px" src="img/05.svg" alt="Apple"> </a> -->
+	
 	<header>
 			<div class="All_header_menu">
 				<div class="Logo">
@@ -48,7 +47,7 @@ $manager = mysqli_fetch_all($manager);
 	<?php
 	foreach ($manager as $item ) {
 		?>
-		
+
 		<tr>
 			<td><?= htmlspecialchars($item[0]) ?></td>
 			<td><?= htmlspecialchars($item[1]) ?></td>
@@ -62,9 +61,9 @@ $manager = mysqli_fetch_all($manager);
 	</table>
 	<h2>Add new manager</h2>
 	<form action="vendor/create_manager.php" method="post">
-		
+
 		<p>email</p>
-		<input type="text" name="email"> 
+		<input type="text" name="email">
 		<p>username</p>
 		<input type="text" name="username">
 		<button type="submit"> <div class="btn_order">Add</div> </button>
